@@ -1,5 +1,4 @@
 class ArticlesController < ApplicationController
-
   def new
     @article = Article.new
   end
@@ -10,9 +9,9 @@ class ArticlesController < ApplicationController
 
     if @article.save
       redirect_to root_path
-      flash[:success] = 'Article created succesfully'
+      flash[:success] = 'Post created Succesfully'
     else
-      redirect_to root_path
+      render :new
     end
   end
 
