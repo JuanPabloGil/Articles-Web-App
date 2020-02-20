@@ -4,12 +4,12 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @user = User.all.first
+    @user = current_user
     @article = @user.articles.new(post_params)
 
     if @article.save
       redirect_to root_path
-      flash[:success] = 'Post created Succesfully'
+      flash[:success] = 'Article created Succesfully'
     else
       render :new
     end
