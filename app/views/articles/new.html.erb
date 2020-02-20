@@ -1,0 +1,9 @@
+<div class="container">
+  <%= form_for(@article) do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title, class: 'form-control', placeholder: 'Add Title' %>
+    <%= form.label :Content %>
+    <%= form.text_field :text, class: 'form-control', placeholder: 'Add Content...' %>
+    <%= form.submit 'Create Article', class: 'btn btn-primary' %>
+  <% end %>
+</div>
