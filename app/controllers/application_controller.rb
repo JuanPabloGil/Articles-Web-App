@@ -23,4 +23,17 @@ class ApplicationController < ActionController::Base
     flash[:danger] = 'You must be logged in first'
     redirect_to login_path
   end
+
+  def most_voted_article
+    articles = Article.all
+    best_count = Article.all.first.votes.size
+    best_article = Article.all.first
+    articles.each do |article|
+      if article.votes.size > best_count
+        best_article = article
+        best_count = article.votes.size
+      end
+    end
+    best_article
+  end
 end
