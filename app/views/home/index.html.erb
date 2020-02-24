@@ -9,19 +9,17 @@
 </div>
 
 
-<div class="container-fluid">
+
 
   <div class="row">
 
     <%  @categories.each do |category| %>
-    <div class="col-4 ">
-      <div class="top-post"  style="background:url(https://i.imgur.com/8R0jcdO.jpg)">
-        <h1 class="top-left"><%= category.name %></h1>
-
+    <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+      <div class="category-post"  style="background:url(https://i.imgur.com/8R0jcdO.jpg)">
+        <h5 class="category-name m-4"><%= category.name %></h5>
+        <p class="article-title-category m-4">This is </p>
       </div>
     </div>
     <% end %>
 
   </div>
-
-</div>

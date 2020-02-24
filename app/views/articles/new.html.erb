@@ -5,6 +5,7 @@
   <%= form.label 'select yor category' %>
 
   <%= form.collection_select :category_id, @categories, :id, :name,  prompt: "Select Category" %>
+  <%= link_to('Create new Category', new_category_path) %>
   <%= form.label :Content %>
   <%= form.text_area :text, class: 'form-control', placeholder: 'Add Content...', size: "60x12" %>
 

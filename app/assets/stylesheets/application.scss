@@ -71,21 +71,34 @@ footer {
 .category-post {
   position: relative;
   color: white;
+  padding: 150px;
   background-repeat: no-repeat !important;
   background-size:cover !important;
   -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
   -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
   box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
+
 }
 
 .bottom-left {
   position: absolute;
-  bottom: 8px;
+  bottom: 12px;
   left: 16px;
 }
 
-.top-left {
+.category-name {
+  font-weight: bold;
   position: absolute;
   top: 8px;
   left: 16px;
+  border-bottom: 2px solid yellow;
+  text-transform: capitalize;
+}
+
+.article-title-category {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
