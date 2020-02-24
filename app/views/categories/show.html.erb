@@ -18,6 +18,8 @@
           <h5 class="categories-title-article "> <%= article.title %> </h5>
           <p> <%= truncate(article.text, length: 155) %> </p>
           <p class="categories-rm-article ">Read More</p>
+          <p class="categories-rm-article ">Author: <%= article.user.name %> </p>
+          <%= vote_or_unvote(article) %>
         </div>
 
       </div>
