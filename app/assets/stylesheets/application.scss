@@ -26,9 +26,10 @@ html, body {
 }
 
 a.link-nav:hover {
-  color: #fd6000;
+  color: #fd6000 !important;
   text-decoration: none;
 }
+
 nav {
   background-color: white
 }
@@ -42,8 +43,6 @@ footer {
 .link-footer {
   color: #fd6000;
 }
-
-
 
 //Article Style
 .article-title {
@@ -132,7 +131,6 @@ a.category-name {
 .categories-rm-article {
   color: #fa843e;
 }
-
 
 // FORMS
 .send-button {
