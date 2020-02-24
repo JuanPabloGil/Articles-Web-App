@@ -9,4 +9,9 @@ class Article < ApplicationRecord
   belongs_to :user
   belongs_to :category
   has_many :votes, dependent: :destroy
+
+  VALID_IMAGE = /.(?:jpg|gif|png)/i.freeze
+  validates :image, presence: true, length: { maximum: 255 },
+                    format: { with: VALID_IMAGE }
+  
 end

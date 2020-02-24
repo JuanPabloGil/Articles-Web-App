@@ -1,7 +1,10 @@
 <div class="container">
-  New category
+  <h1 class="page-title ">New category </h1>
   <%= form_for(@category) do |f| %> <%= render 'shared/error_messages' %>
-  <%= f.label :name %> <%= f.text_field :name, class: 'form-control' %>
-  <%= f.label :priority %> <%= f.number_field :priority, class: 'form-control' %>
-  <%= f.submit "Create Category", class: "btn btn-primary" %> <% end %>
+  <%= f.label :name, "Name of category", class: "label-form mt-4" %>
+  <%= f.text_field :name, class: 'form-control' %>
+  <%= f.label :title, "Priority", class: "label-form mt-4" %>
+  <%= f.number_field :priority, class: 'form-control' %>
+  <%= f.submit "Create Category", class: 'btn send-button mt-4 mb-5' %>
+  <% end %>
 </div>
