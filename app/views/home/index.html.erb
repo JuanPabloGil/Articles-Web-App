@@ -3,8 +3,8 @@
 <div class="top-post" style="background:url(https://i.imgur.com/8R0jcdO.jpg)">
   <!-- <div class="top-post" style="background:url(https://i.imgur.com/vbJ70Gr.jpg)"> -->
   <div class="bottom-left">
-    <h4 class="article-title"><%= @most_voted_article.title %></h4>
-    <p class="article-text"> <%= truncate(@most_voted_article.text, length:200, separator: ' ') %> </p>
+    <h4 class="article-title"> <%#= @most_voted_article.title %> </h4>
+    <p class="article-text"> <%#= truncate(@most_voted_article.text, length:200, separator: ' ') %> </p>
   </div>
 </div>
 
@@ -12,11 +12,15 @@
 <div class="container-fluid">
 
   <div class="row">
+
     <%  @categories.each do |category| %>
-    <div class="col-4">
-      <h1><%= category.name %></h1>
+    <div class="col-4 ">
+      <div class="top-post"  style="background:url(https://i.imgur.com/8R0jcdO.jpg)">
+        <h1 class="top-left"><%= category.name %></h1>
+
       </div>
-      <% end %>
+    </div>
+    <% end %>
 
   </div>
 

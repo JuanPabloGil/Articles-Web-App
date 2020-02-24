@@ -54,17 +54,25 @@ footer {
 .article-text {
   color: white;
   text-transform: capitalize;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
-.top-post{
+.top-post {
   position: relative;
   color: white;
-  border: 2px solid black;
   padding: 250px;
   background-repeat: no-repeat !important;
   background-size:cover !important;
+  -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
+  -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
+  box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
+}
 
+.category-post {
+  position: relative;
+  color: white;
+  background-repeat: no-repeat !important;
+  background-size:cover !important;
   -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
   -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
   box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
@@ -73,5 +81,11 @@ footer {
 .bottom-left {
   position: absolute;
   bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
   left: 16px;
 }
