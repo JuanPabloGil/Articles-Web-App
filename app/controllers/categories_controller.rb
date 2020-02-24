@@ -14,7 +14,7 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
     if @category.save
 
-      redirect_to root_path
+      redirect_to new_article_path
       flash[:success] = 'Category created succesfully '
     else
       render 'new'
