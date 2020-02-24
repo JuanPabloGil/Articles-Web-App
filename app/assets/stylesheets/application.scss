@@ -38,11 +38,6 @@ footer {
 }
 
 
-//Article Style
-.article-title {
-  color: #ec5b01;
-  text-transform: capitalize;
-}
 
 //Article Style
 .article-title {
@@ -71,7 +66,7 @@ footer {
 .category-post {
   position: relative;
   color: white;
-  padding: 150px;
+  padding: 100px;
   background-repeat: no-repeat !important;
   background-size:cover !important;
   -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
@@ -95,10 +90,38 @@ footer {
   text-transform: capitalize;
 }
 
+a.category-name {
+  text-decoration: none;
+  color: white ;
+}
+
 .article-title-category {
-  position: absolute;
+
   bottom: 12px;
   left: 16px;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+.categories-title-category {
+  font-weight: bold;
+  color: #f99c03;
+  border-bottom: 2px solid #f99c03;
+  text-transform: capitalize;
+}
+
+
+.categories-title-article {
+  font-weight: bold;
+  color: #4c443e;
+  text-transform: capitalize;
+}
+
+.categories-text-article {
+  color: #4c4c4c
+
+}
+
+.categories-rm-article {
+  color: #fa843e;
 }

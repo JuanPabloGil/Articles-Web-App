@@ -1,0 +1,28 @@
+<h1><%= @category.name %></h1>
+
+<div class="container-fluid">
+  <div class="row">
+    <% counter = 0 %>
+    <% out = '' %>
+    <% @articles.each do |article| %>
+    <% counter == 2 and out == '' ? ( counter , out = 0, 'flex-row-reverse') : (counter, out = 0,  '') %>
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="row <%= out %>">
+
+        <div class="col-lg-6  col-md-12 category-post"  style="background:url(https://i.imgur.com/8R0jcdO.jpg)">
+        </div>
+
+        <div class=" col-lg-6 col-md-12 align-self-center p-4 m-0">
+          <h5 class="categories-title-category "> <%= article.category.name %> </h5>
+          <h5 class="categories-title-article "> <%= article.title %> </h5>
+          <p> <%= truncate(article.text, length: 155) %> </p>
+          <p class="categories-rm-article ">Read More</p>
+        </div>
+
+      </div>
+    </div>
+    <% counter += 1%>
+    <% end %>
+  </div>
+</div>
