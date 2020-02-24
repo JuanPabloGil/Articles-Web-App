@@ -36,3 +36,42 @@ footer {
 .link-footer {
   color: #fd6000;
 }
+
+
+//Article Style
+.article-title {
+  color: #ec5b01;
+  text-transform: capitalize;
+}
+
+//Article Style
+.article-title {
+  color: #ec5b01;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.article-text {
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;  
+}
+
+.top-post{
+  position: relative;
+  color: white;
+  border: 2px solid black;
+  padding: 250px;
+  background-repeat: no-repeat !important;
+  background-size:cover !important;
+
+  -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
+  -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
+  box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}

@@ -1,22 +1,23 @@
-<div>
-  <hr>
-  <%= @most_voted_article.title %>
-  <%= @most_voted_article.text %>
-  <hr>
+
+
+<div class="top-post" style="background:url(https://i.imgur.com/8R0jcdO.jpg)">
+  <!-- <div class="top-post" style="background:url(https://i.imgur.com/vbJ70Gr.jpg)"> -->
+  <div class="bottom-left">
+    <h4 class="article-title"><%= @most_voted_article.title %></h4>
+    <p class="article-text"> <%= truncate(@most_voted_article.text, length:200, separator: ' ') %> </p>
+  </div>
 </div>
 
-<div class="container">
 
-  <h1>This is the home </h1>
-  <%  @articles.each do |article| %>
-  <h1><%= article.title %></h1>
-  <p><%= article.text %>  </p>
-  <strong><%= article.category.name %>  </strong>
+<div class="container-fluid">
 
-  <span>Number of votes  <%= article.votes.size %></span>
-  <%= vote_or_unvote(article) %>
-  <span class='post-date'> <%= article.created_at.strftime("%Y/%m/%d") %> </span>
-  <hr>
-  <% end %>
+  <div class="row">
+    <%  @categories.each do |category| %>
+    <div class="col-4">
+      <h1><%= category.name %></h1>
+      </div>
+      <% end %>
+
+  </div>
 
 </div>
