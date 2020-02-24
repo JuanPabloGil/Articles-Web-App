@@ -11,6 +11,7 @@ class VotesController < ApplicationController
   end
 
   def destroy
+    @category = Article.find_by(id: params[:article_id]).category
     vote = Vote.find_by(id: params[:id], user: current_user, article_id: params[:article_id])
     if vote
       vote.destroy
