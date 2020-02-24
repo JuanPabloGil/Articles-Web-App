@@ -60,7 +60,7 @@ footer {
 .top-post {
   position: relative;
   color: white;
-  padding: 250px;
+  padding: 180px;
   background-repeat: no-repeat !important;
   background-size:cover !important;
   -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
@@ -156,6 +156,11 @@ a.label-form {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .bg-brown {
-    background-color: #4e443e;
+  background-color: #4e443e;
+}
+
+.form-control {
+  border-color: #4e443e;
 }
