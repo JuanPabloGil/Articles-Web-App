@@ -17,12 +17,18 @@
         </div>
 
         <div class=" col-lg-6 col-md-12 align-self-center p-4 m-0">
-          <h5 class="categories-title-category "> <%= article.category.name %> </h5>
-          <h5 class="categories-title-article "> <%= article.title %> </h5>
+          <h5 class="categories-title-category ""> <%= article.category.name %> </h5> <br>
+          <h5 class="categories-title-article mt-4"> <%= article.title %> </h5>
           <p> <%= truncate(article.text, length: 155) %> </p>
           <p class="categories-rm-article ">Read More</p>
-          <p class="categories-rm-article ">Author: <%= article.user.name %> </p>
-          <%= vote_or_unvote(article) %>
+          <div class="row">
+            <div class="col-8">
+              <span class="categories-rm-article text-capitalize font-weight-bold" >Author: <%= article.user.name %> </span>
+            </div>
+            <div class="col-4 text-rigth">
+              <span class="label-form">  <%= article.votes.size %> <%= vote_or_unvote(article) %></span>
+            </div>
+          </div>
         </div>
 
       </div>

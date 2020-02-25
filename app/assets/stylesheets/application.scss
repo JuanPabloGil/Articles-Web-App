@@ -115,6 +115,8 @@ a.category-name {
   color: #f99c03;
   border-bottom: 2px solid #f99c03;
   text-transform: capitalize;
+  position: absolute;
+  padding-bottom:  3px;
 }
 
 
@@ -150,6 +152,7 @@ a.category-name {
 a.label-form {
   font-size: 20px;
   text-decoration: none;
+  color: #4e443e; 
 }
 
 //MAIN STYLE
@@ -171,17 +174,4 @@ a.label-form {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.social-icons {
-  display: inline-block;
-  border-radius: 60px;
-  background-color: #fd6000;
-  padding: .1px 4px;
-  margin: 5px;
-}
-
-a.social-icons {
-  color: #4e443e;
-  font-size: 20px;
 }
