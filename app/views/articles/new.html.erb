@@ -1,5 +1,10 @@
+<div class=" col-12 bg-brown p-5">
+  <h1 class="page-title-wihte ">Write an article</h1>
+</div>
+
 <div class="container">
-  <h1 class="page-title ">Write an article</h1>
+
+
   <%= form_for(@article) do |form| %>
   <%= form.label :title, "Title", class: "label-form mt-4" %>
   <%= form.text_field :title, class: 'form-control', placeholder: 'Add Title' %>
@@ -8,7 +13,7 @@
   <%= form.text_field :image, class: 'form-control mb-4', placeholder: 'ej: https://i.imgur.com/8R0jcdO.jpg ' %>
 
 
-  <%= form.collection_select :category_id, @categories, :id, :name,  prompt: "Select Category" %>
+  <%= form.collection_select :category_id, @categories, :id, :name, {prompt: "Select Category"}, {class: 'mdb-select md-form' } %>
   <%= link_to('Create new Category', new_category_path, class: 'label-form') %>
 <br>
   <%= form.label "Content", class: "label-form mt-4" %>

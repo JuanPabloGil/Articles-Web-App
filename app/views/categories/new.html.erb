@@ -1,5 +1,8 @@
-<div class="container">
-  <h1 class="page-title ">New category </h1>
+<div class=" col-12 bg-brown p-5">
+  <h1 class="page-title-wihte">New category </h1>
+</div>
+<div class="container mt-5">
+
   <%= form_for(@category) do |f| %> <%= render 'shared/error_messages' %>
   <%= f.label :name, "Name of category", class: "label-form mt-4" %>
   <%= f.text_field :name, class: 'form-control' %>
