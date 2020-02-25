@@ -12,6 +12,7 @@
 *
 *= require_tree .
 *= require_self
+*= require font-awesome
 */
 @import "bootstrap";
 
@@ -169,4 +170,17 @@ a.label-form {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.social-icons {
+  display: inline-block;
+  border-radius: 60px;
+  background-color: #fd6000;
+  padding: .1px 4px;
+  margin: 5px;
+}
+
+a.social-icons {
+  color: #4e443e;
+  font-size: 20px;
 }
