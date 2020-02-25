@@ -3,7 +3,7 @@ class VotesController < ApplicationController
     @vote = current_user.votes.new(article_id: params[:article_id])
     @category = Article.find_by(id: params[:article_id]).category
     if @vote.save
-      redirect_to  category_path(@category) and flash.now[:info] = 'You vote this article'
+      redirect_to category_path(@category) and flash.now[:info] = 'You vote this article'
 
     else
       flash[:info] = 'You cannot vote for this article.'
