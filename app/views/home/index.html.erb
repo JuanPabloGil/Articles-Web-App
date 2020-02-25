@@ -7,23 +7,24 @@
     <p class="article-text"> <%= truncate(@most_voted_article.text, length:100, separator: ' ') %> </p>
   </div>
 </div>
+
 <% end %>
 
 
-<div class="container-fluid">
+<div class="container-fluid h-50">
 
 
   <div class="row">
 
     <%  @categories.ordered_by_priority.each do |category| %>
+    <% if category.articles.size > 1 %>
     <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-      <% if category.articles.size > 0 %>
       <div class="category-post"  style="background:url(<%= category.articles.ordered_most_recent.first.image %>)">
         <h5> <%= link_to(category.name, category_path(category), :class => 'category-name m-4')%> </h5>
         <p class="article-title-category bottom-left m-4"><%= category.articles.ordered_most_recent.first.title %></p>
       </div>
-      <% end %>
     </div>
+    <% end %>
     <% end %>
 
   </div>

@@ -64,6 +64,8 @@ footer {
   padding: 180px;
   background-repeat: no-repeat !important;
   background-size:cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
   -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
   -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
   box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
@@ -152,7 +154,7 @@ a.category-name {
 a.label-form {
   font-size: 20px;
   text-decoration: none;
-  color: #4e443e; 
+  color: #4e443e;
 }
 
 //MAIN STYLE
