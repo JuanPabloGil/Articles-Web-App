@@ -12,8 +12,8 @@ gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
+gem 'font-awesome-rails'
 gem 'uglifier', '>= 1.3.0'
-gem "font-awesome-rails"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 gem 'bootstrap', '~> 4.4.1'
@@ -46,7 +46,6 @@ group :development, :test do
 end
 
 group :development do
-
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
