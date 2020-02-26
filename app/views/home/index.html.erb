@@ -1,7 +1,7 @@
 
 <% if @most_voted_article %>
 
-<div class="top-post" style="background:url(<%= @most_voted_article.image %>)">
+<div class="top-post h-50" style="background:url(<%= @most_voted_article.image %>)">
   <div class="bottom-left">
     <h4 class="article-title"> <%= @most_voted_article.title %> </h4>
     <p class="article-text"> <%= truncate(@most_voted_article.text, length:100, separator: ' ') %> </p>
@@ -11,7 +11,7 @@
 <% end %>
 
 
-<div class="container-fluid h-50">
+<div class="container-fluid">
 
 
   <div class="row">
