@@ -1,7 +1,7 @@
 //Top article
 
 .article-title {
-  color: #ec5b01;
+  color: #fd6000;
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -20,9 +20,9 @@
   background-size:cover !important;
   background-attachment: fixed !important;
   background-position: center !important;
-  -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
-  -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
-  box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
+  -moz-box-shadow:    inset  1px -200px 10px -10px rgba(0,0,0,.4);
+  -webkit-box-shadow: inset  1px -200px 10px -10px rgba(0,0,0,.4);
+  box-shadow:         inset  1px -200px 10px -10px rgba(0,0,0,.4);
 }
 
 //Category display on home
