@@ -12,8 +12,7 @@ describe "GET 'login_path'", type: :feature do
   end
 end
 
-
-describe "Unsccesfull login", type: :feature do
+describe 'Unsccesfull login', type: :feature do
   it 'Non user creating event' do
     visit '/login'
     fill_in('Name', with: 'wrong user name')

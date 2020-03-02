@@ -1,9 +1,6 @@
-
-# frozen_string_literal: true
-
 require 'rails_helper'
 
-describe "Signup User", type: :feature do
+describe 'Signup User', type: :feature do
   it 'Create user on Signup path' do
     visit '/signup'
     fill_in('Name', with: 'Juan Pablo')

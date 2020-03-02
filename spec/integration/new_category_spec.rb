@@ -1,9 +1,6 @@
-
-# frozen_string_literal: true
-
 require 'rails_helper'
 
-describe "Create category", type: :feature do
+describe 'Create category', type: :feature do
   it 'Create user on Signup path' do
     User.create(name: 'Juan Pablo')
     visit '/login'
@@ -15,6 +12,5 @@ describe "Create category", type: :feature do
     click_button 'Create Category'
 
     expect(page).to have_content('created succesfully')
-
   end
 end
