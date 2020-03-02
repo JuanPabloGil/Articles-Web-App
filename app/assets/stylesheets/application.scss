@@ -14,6 +14,7 @@
 *= require_self
 *= require font-awesome
 */
+
 @import "bootstrap";
 
 html, body {
@@ -21,128 +22,35 @@ html, body {
   height: 100%;
 }
 
-//Navigation bar
-.link-nav{
-  color: #847f7a;
+
+//MAIN STYLE
+.page-title {
+  color: #4e443e;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-a.link-nav:hover {
-  color: #fd6000 !important;
-  text-decoration: none;
+.page-title-wihte {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-nav {
-  background-color: white
-}
-
-//Footer
-footer {
+.bg-brown {
   background-color: #4e443e;
-  color: white;
-}
-
-.link-footer {
-  color: #fd6000;
-}
-
-//Article Style
-.article-title {
-  color: #ec5b01;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
-.article-text {
-  color: white;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
-.top-post {
-  position: relative;
-  color: white;
-  padding: 180px;
-  background-repeat: no-repeat !important;
-  background-size:cover !important;
-  background-attachment: fixed !important;
-  background-position: center !important;
-  -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
-  -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
-  box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
-}
-
-.category-post {
-  position: relative;
-  color: white;
-  padding: 120px;
-  background-repeat: no-repeat !important;
-  background-size:cover !important;
-  -moz-box-shadow:    inset  1px -100px 10px -10px rgba(0,0,0,.4);
-  -webkit-box-shadow: inset  1px -100px 10px -10px rgba(0,0,0,.4);
-  box-shadow:         inset  1px -100px 10px -10px rgba(0,0,0,.4);
-
-}
-
-.bottom-left {
-  position: absolute;
-  bottom: 12px;
-  left: 16px;
-  font-weight: bold;
-}
-
-.category-name {
-  font-weight: bold;
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  border-bottom: 2px solid yellow;
-  text-transform: capitalize;
-}
-
-a.category-name {
-  text-decoration: none;
-  color: white ;
-}
-
-.article-title-category {
-
-  bottom: 12px;
-  left: 16px;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.categories-title-category {
-  font-weight: bold;
-  color: #f99c03;
-  border-bottom: 2px solid #f99c03;
-  text-transform: capitalize;
-  position: absolute;
-  padding-bottom:  3px;
-}
-
-
-.categories-title-article {
-  font-weight: bold;
-  color: #4c443e;
-  text-transform: capitalize;
-}
-
-.categories-text-article {
-  color: #4c4c4c
-
-}
-
-.categories-rm-article {
-  color: #fa843e;
 }
 
 // FORMS
+
 .send-button {
   background-color: #4e443e;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.form-control {
+  border-color: #4e443e;
 }
 
 .label-form {
@@ -155,44 +63,4 @@ a.label-form {
   font-size: 20px;
   text-decoration: none;
   color: #4e443e;
-}
-
-//MAIN STYLE
-.page-title {
-  color: #4e443e;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.bg-brown {
-  background-color: #4e443e;
-}
-
-.form-control {
-  border-color: #4e443e;
-}
-
-.page-title-wihte {
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.social-icons {
-  width: 100px;
-}
-
-.rounded-icon {
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  background-color: #fd6000;
-  border-radius: 50% ;
-  text-align: center;
-}
-
-.rounded-icon .social-icon {
-  height: 20px;
-  width: 20px;
-  filter: invert(22%) sepia(2%) saturate(3247%) hue-rotate(343deg) brightness(92%) contrast(77%);
 }
