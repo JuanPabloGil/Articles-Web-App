@@ -41,6 +41,10 @@ a.category-name, a.category-name:hover {
   text-transform: capitalize;
 }
 
+.vote-white, i.vote-white, a.vote-white {
+  color: white !important;
+}
+
 //
 .bottom-left {
   position: absolute;
