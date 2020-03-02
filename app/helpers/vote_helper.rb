@@ -18,7 +18,7 @@ module VoteHelper
 
       if vote
         link_to (fa_icon 'thumbs-o-down'), article_vote_path(id: vote.id, article_id: article.id),
-                                          class: style, method: :delete
+                class: style, method: :delete
       else
         link_to (fa_icon 'thumbs-o-up '), article_votes_path(article_id: article.id), class: style, method: :post
       end
