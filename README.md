@@ -1,5 +1,9 @@
 # Articles Web Application
 
+<p align="center">
+    <img src="/main.png">
+</p>
+
 ## Description 
 
 This project is a web application that lets you register the application with your name and publish articles related to the topic you want items. Each article has a title, content, featured image and category. Each category has a name and priority (from 1 to 5), this to be able to choose which category will be shown first or last.
@@ -59,7 +63,6 @@ Open `http://localhost:3000/` in your browser.
     rpsec --format documentation
 ```
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
 
 ### Deployment
 
@@ -83,9 +86,14 @@ Open `http://localhost:3000/` in your browser.
   ```
 
 
-## Authors
+## Author
 
-Juan Pablo Gil - [LinkedIn](https://www.linkedin.com/in/juan-pablo-gil-1321a515a/)
+👤 **Juan Pablo Gil**
+
+- [GitHub](https://github.com/JuanPabloGil )
+- [@LinkedIn](https://www.linkedin.com/in/juan-pablo-gil-1321a515a/)
+- jpablomgil@gmail.com
+
 
 ## 🤝 Contributing
 
